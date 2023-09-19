@@ -11,5 +11,8 @@ fun Application.configureRouting() {
         }
 
         // TODO post endpoint to receive estimate
+        post("/estimate") {
+            call.respondText("Hello POST!")
+        }
     }
 }
